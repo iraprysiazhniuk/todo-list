@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>TODOList</title>
+  <link rel="stylesheet" href="style/style.css" />  	
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <div class="title">
+                <h1>TODOList</h1>
+        </div>
+    <div class="todoList">
+    <div id="todo">
+            <input type="search" id="search" placeholder="search by title">
+            <select class="status" name="status" id="status">
+                    <option>all</option>
+                    <option value="open">open</option>
+                    <option value="done">done</option>
+            </select>
+            <select class="priority" id="priority">
+                    <option>all</option>
+                    <option value="high">high</option>
+                    <option value="normal">normal</option>
+                    <option value="low">low</option>
+            </select>
+            <button create-task-btn>
+                        Create
+                </button>
+    </div>
+    </header>
+    <main>
+        <div id="tasks">
+                
+        </div>
+    </main>
+    <footer>
+        <h2>Iryna Prysiazhniuk</h2>
+    </footer>
+    <div class="window-create-task">
+
+    </div>
+    <script src="js/CreateDialog.js"></script>
+    <script src="js/index.js"></script>
+
+    <div id="infoDialog">
+            <div class="contentDialog">
+                <div class="mainDialog">
+                    <div id="form_result"></div>
+                    <form id="dialogForm">
+                                <div class="titleDialog">
+                                        <p>Title:</p>
+                                        <input type="text" name="title" placeholder="Title" value="" required/>
+                                </div>
+                                <div class="description">
+                                        <p>Description:</p>
+                                        <input type="text" name="description" placeholder="Description" value="" required/>
+                                </div>
+                                <div class="priority">
+                                        <p>Priority:</p>
+                                        <select name="priority" value="">
+                                                <option value="high">High</option>
+                                                <option value="normal">Normal</option>
+                                                <option value="low">Low</option>
+                                        </select>
+                                </div>
+                                <div class="dialogButtons">
+                                        <input type="button" cancel-btn value="Cancel">
+                                        <input type="button" save-btn value="Save">
+                                </div>
+                        </form>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    
+
+</body>
+</html>
